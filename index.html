@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add smooth scrolling behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+ <!-- Navigation Bar -->  
+ <nav>
+    <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+ </nav> 
+
+ <!-- Hero Section -->
+ <section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Usman Emmanuel | Frontend Developer</h1>
+        <p><b>Showcasing my skills and project</b></p>
+        <button class="button"><a href="#projects" class="btn"><b>View Projects</b></a></button>
+    </div>
+ </section>
+
+ <!-- About Me Section -->
+ <section id="about" class="about">
+    <h2 style="display: flex; justify-content: center;">About Me</h2>
+    <div class="about-content">
+        <div class="profile-wrapper">
+            <img src="download.jpg" alt="Profile Picture" class="Profile Picture">
+            <div class="profile-info">
+        <p>Hi, I'm Usman Emmanuel Adeola, a frontend developer with a passion for building responsive and user-friendly interfaces, with my experience in the field, I've developed a strong foundation in programming languages such as [C,JavaScript], and expertise in [JavaScript].</p>
+        <p>I graduated from the Advanced Frontend Certification Course at New Horizon, and I'm excited to share my skills and experience with you.</p>
+        </div>
+    </div>
+ </div>  
+ </section>
+ <hr class="custom-hr">
+
+ <!-- Skills Section -->
+ <section id="skills" class="skills">
+    <h2 style="display: flex; justify-content: center;">Technical Skills</h2>
+    <ul>
+        <li style="display: flex; justify-content: center;">
+            <span class="skill-name">HTML</span>
+            <div class="progress">
+                <div class="progress-bar" style="width: 90%;">90%</div>
+            </div>
+        </li>
+        <br>
+        <li  style="display: flex; justify-content: center;">
+            <span class="skill-name">CSS</span>
+            <div class="progress">
+                <div class="progress-bar" style="width: 80%;">80%</div>
+            </div>
+        </li>
+        <br>
+        <li  style="display: flex; justify-content: center;">
+            <span class="skill-name">JAVASCRIPT</span>
+            <div class="progress">
+                <div class="progress-bar" style="width: 70%;">70%</div>
+            </div>
+        </li>
+    </ul>
+ </section>
+ <hr class="custom-hr">
+
+ <!-- Experience Section -->
+ <section id="experience" class="experience">
+    <div class="experience-content">
+    <h2 style="display: flex; justify-content: center;">Experience</h2>
+    <p style="display: flex; justify-content: center;">I have worked with certain technologies such as HTML, CSS and JAVASCRIPT during my internship in New Horizon at Bells University of Technology taking the Advanced Frontend Certification Course.</p>
+    </div>
+ </section>
+ <br>
+ <br>
+ <hr class="custom-hr">
+
+ <!-- Project Section-->
+ <section id="projects" class="projects">
+    <h2 style="display: flex; justify-content: center; align-items: center;">Projects</h2>
+    <div class="filter-buttons">
+        <button class="filter-button" data-category="all">All</button>
+        <button class="filter-button" data-category="finance">Finance</button>
+        <button class="filter-button" data-category="tools">Tools</button>
+        <button class="filter-button" data-category="education">Education</button>
+        <button class="filter-button" data-category="event">Event</button>
+    </div>
+    <div class="project-grid">
+        <div class="project-card" data-category="finance">
+            <img src="Loan Calculator - Google Chrome 5_18_2024 1_43_20 PM (2).png" alt="Loan Calculator">
+            <h3>Loan Calculator</h3>
+            <p>A loan calculator built with HTML, CSS and JAVASCRIPT</p>
+        <a href="loan.html">Loan Calculator Project</a>
+        </div>
+        <div class="project-card" data-category="tools">
+            <img src="Portfolio Website - Google Chrome 5_18_2024 1_32_33 PM (2).png" alt="Tip Calculator">
+            <h3>Tip Calculator</h3>
+            <p>A tip calculator built with HTML, CSS and JAVASCRIPT</p>
+        <a href="cal.html">Tip Calculator Project</a>
+        </div>
+        <div class="project-card" data-category="education">
+            <img src="English Dictionary - Google Chrome 5_19_2024 4_42_41 PM (2).png" alt="English Dictionary">
+            <h3>English Dictionary</h3>
+            <p>An English Dictionary built with HTML, CSS and JAVASCRIPT</p>
+            <a href="dictionary.html">English Dictionary</a>
+        </div>
+        <div class="project-card" data-category="event">
+            <img src="New Year Countdown - Google Chrome 5_19_2024 11_47_29 PM (2).png" alt="New Year Countdown">
+            <h3>New Year Countdown</h3>
+            <p>A New Year Countdown built with HTML, CSS and JAVASCRIPT</p>
+            <a href="year.html">New Year Countdown</a>
+        </div>
+    </div>
+ </section>
+ <hr class="custom-hr">
+
+ <!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="contact-content">
+      <h2>Contact</h2>
+      <p>Feel free to reach out to me via the contact information below.</p>
+        <ul>
+          <li>
+            <i class="fa fa-phone"></i>
+            <span>Phone:</span>
+            <a href="tel:+1234567890">+2347055915499</a>
+          </li>
+          <li>
+            <i class="fa fa-envelope"></i>
+            <span>Email:</span>
+            <a href="mailto:your@email.com">adeolaemmanuel2005@gmail.com</a>
+          </li>
+          <li>
+            <i class="fa fa-map-marker"></i>
+            <span>Address:</span>
+            <address> Bells University of Technology, Ota. Ogun State</address>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+ <footer>
+    <h2>&copy; <span id="year"></span>- Usman Emmanuel</h2>
+    <p id="datetime"></p>
+ </footer>
+ <!-- JavaScript -->
+ <script src="project.js"></script>
+</body>
+</html>
